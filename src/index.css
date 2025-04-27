@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --default-font-family: "Poppins", sans-serif;
+}
+
+@theme default {
+  --color-bg: #161621;
+  --color-bg2: #2b2b38;
+  --color-bg3: #4a4b56;
+  --color-imp-red: #f74346;
+  --color-carrow-orange: #f18f01;
+  --color-violeta-claro: #7a7db9;
+  --color-violeta-escuro: #4c4f90;
+  --color-cinza: #cbcbcb;
+}
+
+@layer components {
+  .poster {
+    @apply shrink-0 rounded-2xl;
+  }
+  .btn-footer {
+    @apply flex flex-col justify-center items-center text-bg3 gap-1;
+  }
+  .linha-footer {
+    @apply w-full h-1 bg-imp-red rounded-t-full;
+  }
+}
+
+html {
+  background-color: var(--color-bg);
+}
