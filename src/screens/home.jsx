@@ -18,7 +18,7 @@ export default function Home() {
   const [activeButton, setActiveButton] = useState("services");
 
   return (
-    <main className="bg-bg mt-25 space-y-8">
+    <main className="bg-bg mt-10 space-y-8">
       <section
         id="top"
         className="flex items-center w-full justify-between mt-10 px-5"
